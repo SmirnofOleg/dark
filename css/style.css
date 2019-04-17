@@ -1,0 +1,125 @@
+/*colors*/
+/*задний фон*/
+/*ховер в меню*/
+/*просто белый*/
+/*ховер на кнопках*/
+/*кнопки*/
+/*кнопки и фон*/
+/*fonts*/
+body {
+  margin: 0;
+  padding: 0;
+  background: #282a2e;
+  font-family: 'Roboto', sans-serif;
+}
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1235px;
+  height: auto;
+  margin: 20px auto;
+}
+.header .logo {
+  display: block;
+  width: 31%;
+}
+.header .logo__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  text-decoration: none;
+}
+.header .logo__link__image {
+  height: 30px;
+  width: 45px;
+}
+.header .logo__link__text {
+  margin-left: 4%;
+  color: #ffffff;
+  font-size: 32px;
+}
+.header .nav-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header .nav-menu ul li {
+  list-style: none;
+}
+.header .nav-menu ul li a {
+  display: block;
+  margin: 10px 0;
+  padding: 35px 30px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.header .nav-menu ul li a:hover {
+  color: #97c248;
+}
+.header .search__input {
+  display: none;
+  background: transparent;
+  outline: none;
+  border: none;
+}
+.header .search__btn {
+  display: block;
+  outline: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.header .search__btn img {
+  width: 20px;
+  color: #ffffff;
+}
+.header .burger {
+  display: none;
+  cursor: pointer;
+}
+.header .burger .line1,
+.header .burger .line2,
+.header .burger .line3 {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 7px;
+}
+@media (max-width: 1024px) {
+  .header .burger {
+    display: block;
+  }
+  .header .active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header .active ul {
+    display: block;
+  }
+  .header .active ul li a {
+    margin: 0;
+  }
+}

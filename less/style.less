@@ -1,0 +1,113 @@
+/*colors*/
+@bg: #282a2e; /*задний фон*/
+@hover:#97c248; /*ховер в меню*/
+@white: #fff; /*просто белый*/
+@btn-hover: #1bbc9d; /*ховер на кнопках*/
+@btn: #b0cd3b; /*кнопки*/
+@button: #313338; /*кнопки и фон*/
+
+/*fonts*/
+
+body {
+	margin: 0;
+	padding: 0;
+	background: @bg;
+	font-family: 'Roboto', sans-serif;
+}
+.header {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	justify-content: space-between;
+	max-width: 1235px;
+	height: auto;
+	margin: 20px auto;
+		.logo {
+			display: block;
+			width: 31%;
+			&__link {
+				display: flex;
+				text-align: center;
+				align-items: baseline;
+				text-decoration: none;
+				&__image {
+					height: 30px;
+					width: 45px;
+				}
+				&__text {
+					margin-left: 4%;
+					color: @white;
+					font-size: 32px;
+				}
+			}
+		}
+		.nav-menu {
+			ul {
+				display: flex;
+				li {
+					list-style: none;
+					a {
+						display: block;
+						margin: 10px 0;
+						padding: 35px 30px;
+						font-size: 20px;
+						text-decoration: none;
+						color: @white;
+						transition: 0.5s;
+						&:hover {
+							color: @hover;
+						}
+					}
+				}
+			}		
+	}
+	.search {
+		&__input {
+			display: none;
+			background: transparent;
+			outline: none;
+			border: none;
+		}
+		&__btn {
+			display: block;
+			outline: none;
+			background: transparent;
+			border: none;
+			cursor: pointer;
+			img {
+				width: 20px;
+				color: @white;
+			}
+		}
+	}
+	.burger {
+		display: none;
+		cursor: pointer;
+		.line1,.line2,.line3 {
+			width: 25px;
+			height: 3px;
+			background-color: @white;
+			margin: 7px;
+		}
+	}
+}
+
+@media(max-width: 1024px) {
+	.header {
+		.burger{
+			display: block;
+		}
+		.active {
+			display: flex;
+			flex-direction: column;
+			ul {
+				display: block;
+				li{
+					a {
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
+}
