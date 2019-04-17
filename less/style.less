@@ -88,18 +88,57 @@ body {
 			height: 3px;
 			background-color: @white;
 			margin: 7px;
+			transition: all 0.3s ease-in;
 		}
 	}
 }
 
+
+
+@keyframes navLinkFade {
+	from {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+// .burger {
+// 	.line1 {
+// 		transform: rotate(-45deg) translate(-5px, 6px);
+// 	}
+// 	.line2 {
+// 		opacity: 0;
+// 	}
+// 	.line3 {
+// 		transform: rotate(45deg) translate(-5px, -6px);
+// 	}
+// }
+
 @media(max-width: 1024px) {
 	.header {
+		justify-content: space-around;
+		.logo {
+			order: 1;
+			width: 15%;
+		}
+		.nav-menu {
+			display: none;
+			flex-direction: column;
+		}
 		.burger{
 			display: block;
 		}
-		.active {
+		.search {
+			order: 1;
+		}
+		.nav-active {
+			position: fixed;
 			display: flex;
 			flex-direction: column;
+			transform: translateY(30px);
 			ul {
 				display: block;
 				li{
