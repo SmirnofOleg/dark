@@ -26,13 +26,12 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 1235px;
   height: auto;
-  margin: 20px auto;
+  margin: 20px 10%;
+  max-width: 80%;
 }
 .header .logo {
   display: block;
-  width: 31%;
 }
 .header .logo__link {
   display: -webkit-box;
@@ -52,6 +51,9 @@ body {
   margin-left: 4%;
   color: #ffffff;
   font-size: 32px;
+}
+.header .nav-menu {
+  margin-left: 20%;
 }
 .header .nav-menu ul {
   display: -webkit-box;
@@ -74,20 +76,32 @@ body {
 .header .nav-menu ul li a:hover {
   color: #97c248;
 }
-.header .search__input {
-  display: none;
+.header .search-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header .search-box__input {
   background: transparent;
   outline: none;
   border: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #97c248;
+  width: 0px;
+  height: 100%;
+  border-bottom: 2px solid transparent;
+  z-index: 2;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
-.header .search__btn {
-  display: block;
+.header .search-box__btn {
   outline: none;
   background: transparent;
   border: none;
   cursor: pointer;
 }
-.header .search__btn img {
+.header .search-box__btn img {
   width: 20px;
   color: #ffffff;
 }
@@ -105,39 +119,15 @@ body {
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
-@-webkit-keyframes navLinkFade {
-  from {
-    opacity: 0;
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-}
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-}
 @media (max-width: 1024px) {
   .header {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
   .header .logo {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
     width: 15%;
   }
   .header .nav-menu {
@@ -151,9 +141,9 @@ body {
     display: block;
   }
   .header .search {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .header .nav-active {
     position: fixed;
