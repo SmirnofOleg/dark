@@ -21,7 +21,7 @@ body {
 	justify-content: space-between;
 	// max-width: 1235px;
 	height: auto;
-	margin: 20px 10%;
+	margin: 10px 10%;
 	max-width: 80%;
 		.logo {
 			display: block;
@@ -50,7 +50,7 @@ body {
 					a {
 						display: block;
 						margin: 10px 0;
-						padding: 35px 30px;
+						padding: 30px 30px;
 						font-size: 20px;
 						text-decoration: none;
 						color: @white;
@@ -101,6 +101,45 @@ body {
 	}
 }
 
+// slick-slider
+.slider{
+	&-block {
+		.item {
+			width: 100%;
+			height: 776px;
+			img {
+				width: 100%;
+				// height: 776px;
+				object-fit: cover;
+				height: 100%;
+			}
+		}
+	}
+	.slick-active {
+		outline: none;
+	}
+	.slick-arrow {
+		position: absolute;
+		z-index: 99;
+		width: 20px;
+		height: 20px;
+		border: none;
+		top: 44%;
+		transform: translateY(50%);
+	}
+	.slick-prev {
+		left: 1%;
+	}
+	.slick-next {
+		right: 3%;
+	}
+	.slick-prev:before, .slick-next:before {
+		font-size: 40px;
+		color: @white;
+		top: -13px;
+		position: absolute;
+	}
+}
 
 
 
@@ -108,7 +147,7 @@ body {
 	.header {
 		justify-content: space-around;
 		.logo {
-			order: 2;
+			// order: 1;
 			width: 15%;
 		}
 		.nav-menu {
@@ -117,15 +156,17 @@ body {
 		}
 		.burger{
 			display: block;
+			order: -2;
 		}
 		.search {
-			order: 2;
+			// order: -2;
 		}
 		.nav-active {
 			position: fixed;
 			display: flex;
 			flex-direction: column;
 			transform: translateY(30px);
+			z-index: 999999;
 			ul {
 				display: block;
 				li{

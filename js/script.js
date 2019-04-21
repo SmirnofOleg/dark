@@ -1,3 +1,5 @@
+
+
 // временное меню
 $(document).ready(function() {
 	$(".burger").on("click", function(e){
@@ -7,27 +9,19 @@ $(document).ready(function() {
 });
 
 // наведение на search 
-
 	var search = document.getElementById('search');
 	var btn = document.getElementById('search_submit');
+	btn.onmouseover = menuShow;
+	// btn.onmouseout = menuHide;
 
-	// btn.onmouseover = function(){
-	// 	this.style.background = 'yellow';
-	// }
-
-	// btn.onmouseout = function(){
-	// 	this.style.background = 'transparent';
-	// }
-btn.onmouseover = menuShow;
-// btn.onmouseout = menuHide;
-
-function menuShow(){
+	function menuShow(){
 	search.style.width = '90px';
-}
-function menuHide(){
-	search.style.width = '0px';
-}
+	}
+
+	// function menuHide(){
+	// 	search.style.width = '0px';
+	// }
 
 
-
-
+	/*настраиваем слайдер*/
+	$('.slider-block').slick();
