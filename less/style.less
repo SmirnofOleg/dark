@@ -17,9 +17,9 @@ body {
 .header {
 	display: flex;
 	flex-direction: row;
-	align-items: baseline;
+	align-items: center;
 	justify-content: space-between;
-	height: auto;
+	height: 130px;
 	margin: 10px 10%;
 	max-width: 80%;
 		.logo {
@@ -41,15 +41,16 @@ body {
 			}
 		}
 		.nav-menu {
+			margin-left: 20%;
 			ul {
 				display: flex;
 				li {
 					list-style: none;
 					a {
-						// display: block;
 						margin: 10px 0;
 						padding: 30px 30px;
 						font-size: 20px;
+						letter-spacing: 1.2px;
 						text-decoration: none;
 						color: @white;
 						transition: 0.5s;
@@ -142,10 +143,71 @@ body {
 			height: 776px;
 			img {
 				width: 100%;
-				// height: 776px;
 				object-fit: cover;
 				height: 100%;
 			}
+			.slider-text {
+				position: absolute;
+				transform: translateY(35%);
+				height: 776px;
+				.shapes {
+					position: absolute;
+					overflow: hidden;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					img {
+						width: 50px;
+						height: 50px;
+					}
+				}
+				.shapes1 {
+					transform: translate(145%, -4%);
+					img {
+						width: 42px;
+						height: 40px;
+					}
+				}
+				.shapes2 {
+					transform: translate(157%, -18%);
+					img {
+						width: 37px;
+						height: 38px;
+					}
+				}
+				.shapes3 {
+					transform: translate(142%, 15%);
+					img {
+						width: 80px;
+						height: 75px;
+					}
+				}
+				.shapes4 {
+					transform: translate(162%, -7%);
+				}
+				
+				&__text {
+					display: block;
+					transform: translate(20%);
+					width: 100%;
+					height: auto;
+					line-height: 0px;
+					box-sizing: border-box;
+					h1 {
+						font-size: 76px;
+						font-weight: lighter;
+						color: @white;
+					}
+					p {
+						font-size: 53px;
+						font-weight: 600;
+						color: @white;	
+					}
+				}
+				
+			}
+			
 		}
 	}
 	.slick-active {
@@ -194,6 +256,7 @@ body {
 			background: purple;
 			z-index: 1;
 			opacity: 0.9;
+			margin-left: 0%;
 			left: -100vw;
 			transition: all 0.5s;
 			&_active {
