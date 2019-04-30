@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <style>
+
+      .cls-2 {
+        fill: #ffffff;
+        filter: url(#gradient-overlay-1);
+      }
+    </style>
+
+    <filter id="gradient-overlay-1" filterUnits="userSpaceOnUse">
+      <feImage x="0" y="0" preserveAspectRatio="none" width="32" height="32" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiPjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwIiB5MT0iNC43OTciIHgyPSIzMiIgeTI9IjI3LjIwMyI+CiAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjYWFjYTI5Ii8+CiAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMWJiYzlkIi8+CjwvbGluZWFyR3JhZGllbnQ+CjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiLz48L3N2Zz4="/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+      <feBlend mode="normal" in2="SourceGraphic" result="gradientFill"/>
+    </filter>
+  </defs>
+  <path d="M31.000,32.000 C31.000,32.000 1.000,32.000 1.000,32.000 C0.448,32.000 -0.000,31.552 -0.000,31.000 C-0.000,31.000 -0.000,1.000 -0.000,1.000 C-0.000,0.448 0.448,-0.000 1.000,-0.000 C1.000,-0.000 31.000,-0.000 31.000,-0.000 C31.552,-0.000 32.000,0.448 32.000,1.000 C32.000,1.000 32.000,31.000 32.000,31.000 C32.000,31.552 31.552,32.000 31.000,32.000 ZM30.000,30.000 C30.000,30.000 30.000,11.999 30.000,11.999 C30.000,11.999 2.000,11.999 2.000,11.999 C2.000,11.999 2.000,30.000 2.000,30.000 C2.000,30.000 30.000,30.000 30.000,30.000 ZM2.000,2.000 C2.000,2.000 2.000,9.999 2.000,9.999 C2.000,9.999 30.000,9.999 30.000,9.999 C30.000,9.999 30.000,2.000 30.000,2.000 C30.000,2.000 2.000,2.000 2.000,2.000 ZM16.000,4.000 C16.000,4.000 28.000,4.000 28.000,4.000 C28.000,4.000 28.000,8.000 28.000,8.000 C28.000,8.000 16.000,8.000 16.000,8.000 C16.000,8.000 16.000,4.000 16.000,4.000 ZM10.000,4.000 C10.000,4.000 14.000,4.000 14.000,4.000 C14.000,4.000 14.000,8.000 14.000,8.000 C14.000,8.000 10.000,8.000 10.000,8.000 C10.000,8.000 10.000,4.000 10.000,4.000 ZM4.000,4.000 C4.000,4.000 8.000,4.000 8.000,4.000 C8.000,4.000 8.000,8.000 8.000,8.000 C8.000,8.000 4.000,8.000 4.000,8.000 C4.000,8.000 4.000,4.000 4.000,4.000 Z" id="path-1" class="cls-2" fill-rule="evenodd"/>
+</svg>

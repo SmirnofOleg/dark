@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="24" height="32" viewBox="0 0 24 32">
+  <defs>
+    <style>
+
+      .cls-2 {
+        fill: #ffffff;
+        filter: url(#gradient-overlay-1);
+      }
+    </style>
+
+    <filter id="gradient-overlay-1" filterUnits="userSpaceOnUse">
+      <feImage x="0" y="0" preserveAspectRatio="none" width="24" height="32" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjQiIGhlaWdodD0iMzIiPjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIyMC40MDIiIHkxPSIyOCIgeDI9IjMuNTk4IiB5Mj0iNCI+CiAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjYWFjYTI5Ii8+CiAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMWJiYzlkIi8+CjwvbGluZWFyR3JhZGllbnQ+CjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiLz48L3N2Zz4="/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+      <feBlend mode="normal" in2="SourceGraphic" result="gradientFill"/>
+    </filter>
+  </defs>
+  <path d="M23.000,32.000 C23.000,32.000 1.000,32.000 1.000,32.000 C0.448,32.000 0.000,31.552 0.000,31.000 C0.000,31.000 0.000,1.000 0.000,1.000 C0.000,0.447 0.448,-0.000 1.000,-0.000 C1.000,-0.000 23.000,-0.000 23.000,-0.000 C23.552,-0.000 24.000,0.447 24.000,1.000 C24.000,1.000 24.000,31.000 24.000,31.000 C24.000,31.552 23.552,32.000 23.000,32.000 ZM22.000,2.000 C22.000,2.000 2.000,2.000 2.000,2.000 C2.000,2.000 2.000,30.000 2.000,30.000 C2.000,30.000 22.000,30.000 22.000,30.000 C22.000,30.000 22.000,2.000 22.000,2.000 ZM20.000,22.000 C20.000,22.000 4.000,22.000 4.000,22.000 C4.000,22.000 4.000,4.000 4.000,4.000 C4.000,4.000 20.000,4.000 20.000,4.000 C20.000,4.000 20.000,22.000 20.000,22.000 ZM18.000,6.000 C18.000,6.000 6.000,6.000 6.000,6.000 C6.000,6.000 6.000,20.000 6.000,20.000 C6.000,20.000 18.000,20.000 18.000,20.000 C18.000,20.000 18.000,6.000 18.000,6.000 ZM11.000,24.000 C11.000,24.000 13.000,24.000 13.000,24.000 C13.552,24.000 14.000,24.448 14.000,25.000 C14.000,25.000 14.000,27.000 14.000,27.000 C14.000,27.552 13.552,28.000 13.000,28.000 C13.000,28.000 11.000,28.000 11.000,28.000 C10.448,28.000 10.000,27.552 10.000,27.000 C10.000,27.000 10.000,25.000 10.000,25.000 C10.000,24.448 10.448,24.000 11.000,24.000 Z" id="path-1" class="cls-2" fill-rule="evenodd"/>
+</svg>
