@@ -391,17 +391,19 @@ body {
   outline: none;
   border-radius: 5px;
   border-bottom: 4px solid #4b5817;
-  border-top: 4px solid transparent;
-  border-left: 4px solid transparent;
-  border-right: 4px solid transparent;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  text-decoration: none;
 }
 .sec2__block__button .btn:hover {
   background: #1bbc9d;
+}
+.sec2__block__button .btn2 {
+  padding: 13px 45px;
+  margin-left: 10px;
 }
 @media (max-width: 1024px) {
   .header {
