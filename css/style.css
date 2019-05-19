@@ -355,9 +355,24 @@ body {
 }
 .sec2 {
   position: relative;
-  background: #4b3f34;
   width: 100%;
   height: 550px;
+}
+.sec2__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.sec2__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .sec2__block {
   display: block;
@@ -654,6 +669,18 @@ body {
   }
   .slider-block .item .slider-text__text p {
     font-size: 40px;
+  }
+  .sec2__block {
+    -webkit-transform: translate(11%, 162%);
+            transform: translate(11%, 162%);
+    line-height: 20px;
+  }
+  .sec2__block__tittle h1 {
+    font-size: 64px;
+  }
+  .portfolio .container {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 @media (max-width: 991px) {
