@@ -59,3 +59,13 @@ $(document).ready(function(){
     }
   ]
 	});
+
+	//делаем прокрутку load more 
+
+	$(function(){
+		$("div").slice(0, 12).show();
+		$("#loadMore").on('click', function(e){
+			e.preventDefault();
+			$("div:hidden").slice(0, 12).slideDown();
+		})
+	})
