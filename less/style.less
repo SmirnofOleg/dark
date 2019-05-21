@@ -141,7 +141,7 @@ body {
 	&-block {
 		.item {
 			width: 100%;
-			height: 776px;
+			height: 770px;
 			img {
 				width: 100%;
 				object-fit: cover;
@@ -319,7 +319,7 @@ body {
 .sec2 {
 	position: relative;
 	width: 100%;
-	height: 550px;
+	height: 559px;
 	&__img {
 		position: absolute;
 		top: 0;
@@ -337,14 +337,24 @@ body {
 	}
 	&__block {
 		display: block;
-		transform: translate(11%, 162%);
+		transform: translate(11%, 152%);
 		line-height: 20px;
+		.center {
+			display: table-cell;
+			vertical-align: middle;
+			transform: translate(0%, -50%);
+			line-height: 0;
+		}
 		&__tittle {
 			h1 {
 				font-weight: lighter;
 				font-size: 78px;
 				color: @white;
-				
+			}
+			p {
+				font-weight: lighter;
+				font-size: 53px;
+				color: @white;	
 			}
 		}
 		&__button {
@@ -354,7 +364,7 @@ body {
 			box-sizing: border-box;
 			.btn {
 				display: block;
-				padding: 13px 30px;
+				padding: 20px 32px;
 				font-size: 24px;
 				font-weight: lighter;
 				color: @white;
@@ -371,7 +381,7 @@ body {
 				}
 			}
 			.btn2 {
-				padding: 13px 45px;
+				padding: 20px 52px;
 				margin-left: 10px;
 			}
 		}
@@ -379,7 +389,9 @@ body {
 }
 /*блок с боксами и load more*/
 .portfolio {
-
+	position: relative;
+	height: auto;
+	// height: 974px;
 	.top-box {
 		display: flex;
 		justify-content: center;
@@ -420,7 +432,7 @@ body {
 		flex-wrap: wrap;
 		justify-content: space-between;
 		margin: 55px 10%;
-		max-width: 80%;
+		width: 80%;
 		&__box {
 			display: flex;
 			position: relative;
@@ -452,7 +464,7 @@ body {
 				background: #000;
 				text-align: center;
 				line-height: 12px;
-				// overflow: hidden;
+				overflow: hidden;
 				padding: 15px;
 				box-sizing: border-box;
 				opacity: 0;
@@ -492,6 +504,7 @@ body {
 			&__link {
 				width: 100%;
 				height: 20px;
+				margin-bottom: 15px;
 				a {
 					img {
 						height: 30px;
@@ -509,7 +522,111 @@ body {
 		}
 	}
 }
-
+//Начало блока с ценами
+.section-price {
+	.top-title {
+		text-align: center;
+		font-size: 46px;
+		color: @white;
+		font-weight: 100;
+		margin-top: 54px;
+	}
+	.box {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 80%;
+		margin-left: 10%;
+		flex-wrap: wrap;
+		&__item {
+			width: 350px;
+			height: 584px;
+			margin: 5px;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			background: @button;
+			border-radius: 5px;
+			&:nth-child(2) {
+				background: @white;
+				h1 {
+					color: @button;
+				}
+				.text {
+					color: darken(@white, 60%);
+					span {
+						color: darken(@white, 40%);
+					}
+				}
+				
+			}
+			h1 {
+				font-size: 28px;
+				font-weight: lighter;
+				margin-top: 50px;
+				color: @white;
+			}
+			&__color {
+				width: 100%;
+				padding: 1px 0;		
+				background: @btn-hover;				
+				border-bottom: 2px solid rgba(0,0,0,0.4);
+				.subtitle {
+					font-size: 20px;
+					color: @white;
+				}
+			}
+			&__catalog {
+				width: 100%;
+				line-height: 30px;
+				padding-top: 30px;
+				p {
+					font-size: 20px;
+					font-weight: bold;
+					color: darken(@white, 20%);
+					span {
+						margin-left: 3%;
+						font-weight: 100;
+						color: darken(@white, 20%);
+					}
+				}
+			}
+			&__btn {
+				margin-top: 65px;
+				.btn {
+					position: relative;
+					padding: 15px 32px;
+					width: 60%;
+					font-size: 24px;
+					font-weight: lighter;
+					color: @white;
+					background: @btn;
+					border-radius: 10px;
+					border-bottom: 4px solid darken(@btn, 30%);
+					transition: 0.5s;
+					text-decoration: none;
+					&:hover {
+						background: @btn-hover;
+					}
+				}
+			}
+		}
+		.item2 {
+			width: 280px;
+			margin-top: 72px;
+			background: @white;
+			h1 {
+				color: @button;
+			}
+			.text {
+				color: darken(@white, 60%);
+				span {
+					color: darken(@white, 40%);
+				}
+			}			
+		}
+	}
+}
 
 
 
