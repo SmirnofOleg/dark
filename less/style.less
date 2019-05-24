@@ -571,6 +571,7 @@ body {
 				padding: 1px 0;		
 				background: @btn-hover;				
 				border-bottom: 2px solid rgba(0,0,0,0.4);
+				
 				.subtitle {
 					font-size: 20px;
 					color: @white;
@@ -618,12 +619,87 @@ body {
 			h1 {
 				color: @button;
 			}
+			.black {
+				background: #404040;
+			}
+			.green {
+				background: #4BB2A5;
+			}
+			.yellow {
+				background: #B3C57E;
+			}
+			.white {
+				background: #E5E5E5;
+			}
 			.text {
 				color: darken(@white, 60%);
 				span {
 					color: darken(@white, 40%);
 				}
 			}			
+		}
+	}
+	.bottom-title {
+		display: block;
+		position: relative;
+		margin-top: 100px;
+		text-align: center;
+		h2 {
+			font-size: 24px;
+			font-weight: 100;
+			color: @white;
+			text-transform: uppercase;
+		&:before {
+			content: '';
+			position: absolute;
+			width: 28%;
+			height: 2px;
+			background: #404040;
+			transform: translate(-120%, 15px);
+		}
+		&::after {
+			content: '';
+			position: absolute;
+			width: 28%;
+			height: 2px;
+			background: #404040;
+			transform: translate(23%, 15px);
+		}
+		}	
+	}
+	.bottom-text {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+		width: 50%;
+		align-items: center;
+		text-align: center;
+		transform: translateX(50%);
+		.quote {
+			position: relative;
+			width: 100px;
+			height: 100px;
+			margin: 0 10px;
+			&:last-child {
+				transform: rotateY(180deg);
+			}
+		}
+		p {
+			line-height: 30px;
+			color: darken(@white, 50%);
+		}
+	}
+	.bottom-link {
+		display: block;
+		text-align: center;
+		margin: 20px 20px;
+		a {			
+			color: @btn;
+			text-transform: uppercase;
+			text-decoration: none;
+			font-size: 16px;
+			font-weight: bold;
+			cursor: pointer;	
 		}
 	}
 }

@@ -711,11 +711,99 @@ body {
 .section-price .box .item2 h1 {
   color: #313338;
 }
+.section-price .box .item2 .black {
+  background: #404040;
+}
+.section-price .box .item2 .green {
+  background: #4BB2A5;
+}
+.section-price .box .item2 .yellow {
+  background: #B3C57E;
+}
+.section-price .box .item2 .white {
+  background: #E5E5E5;
+}
 .section-price .box .item2 .text {
   color: #666666;
 }
 .section-price .box .item2 .text span {
   color: #999999;
+}
+.section-price .bottom-title {
+  display: block;
+  position: relative;
+  margin-top: 100px;
+  text-align: center;
+}
+.section-price .bottom-title h2 {
+  font-size: 24px;
+  font-weight: 100;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.section-price .bottom-title h2:before {
+  content: '';
+  position: absolute;
+  width: 28%;
+  height: 2px;
+  background: #404040;
+  -webkit-transform: translate(-120%, 15px);
+          transform: translate(-120%, 15px);
+}
+.section-price .bottom-title h2::after {
+  content: '';
+  position: absolute;
+  width: 28%;
+  height: 2px;
+  background: #404040;
+  -webkit-transform: translate(23%, 15px);
+          transform: translate(23%, 15px);
+}
+.section-price .bottom-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+.section-price .bottom-text .quote {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 10px;
+}
+.section-price .bottom-text .quote:last-child {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+.section-price .bottom-text p {
+  line-height: 30px;
+  color: #808080;
+}
+.section-price .bottom-link {
+  display: block;
+  text-align: center;
+  margin: 20px 20px;
+}
+.section-price .bottom-link a {
+  color: #b0cd3b;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
 }
 @media (max-width: 1024px) {
   .header {
