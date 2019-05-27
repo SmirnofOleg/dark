@@ -660,6 +660,9 @@ body {
   height: 292px;
   margin: 10px;
 }
+.section-price {
+  position: relative;
+}
 .section-price .top-title {
   text-align: center;
   font-size: 46px;

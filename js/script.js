@@ -71,25 +71,45 @@ $(document).ready(function(){
 	})
 
 
-	// $('.box').slick({
-	// 	infinite: true,
-  // 		slidesToShow: 2,
-  // 		slidesToScroll: 1,
-	// 	  responsive: [
-    
-  //   {
-  //     breakpoint: 991,
-  //     settings: {
-  //       slidesToShow: 2,
-  //       slidesToScroll: 2
-  //     }
-  //   },
-  //   {
-  //     breakpoint: 767,
-  //     settings: {
-  //       slidesToShow: 1,
-  //       slidesToScroll: 1
-  //     }
-  //   }
-  // ]
-	// });
+
+//particles effect
+
+	$('.item').mousemove(function(e) {
+
+		var width = $(this).width() / 2;
+		var height = $(this).height() / 2;
+	
+		var amountMovedX1 = ((width - e.pageX) * -3 / 26);
+		var amountMovedY1 = ((height - e.pageY) * -3 / 26);
+	
+		var amountMovedX2 = ((width - e.pageX) / 60);
+		var amountMovedY2 = ((height - e.pageY) / 50);
+	
+		var amountMovedX3 = ((width - e.pageX) / 20);
+		var amountMovedY3 = ((height - e.pageY) / 40);
+	
+		var amountMovedX4 = ((width - e.pageX) * -2  / 10);
+		var amountMovedY4 = ((height - e.pageY) * -2  / 30);
+	
+		$('.shapes1').css('marginLeft', amountMovedX1);
+		$('.shapes1').css('marginTop', amountMovedY1);
+	
+		$('.shapes2').css('marginLeft', amountMovedX2);
+		$('.shapes2').css('marginTop', amountMovedY2);
+	
+		$('.shapes3').css('marginLeft', amountMovedX3);
+		$('.shapes3').css('marginTop', amountMovedY3);
+	
+		$('.shapes4').css('marginLeft', amountMovedX4);
+		$('.shapes4').css('marginTop', amountMovedY4);
+	
+		$('.shapes5').css('marginLeft', amountMovedX1);
+		$('.shapes5').css('marginTop', amountMovedY1);
+	
+		$('.shapes8').css('marginLeft', amountMovedX2);
+		$('.shapes8').css('marginTop', amountMovedY2);
+	
+		$('.shapes7').css('marginLeft', amountMovedX3);
+		$('.shapes7').css('marginTop', amountMovedY3);
+	
+	})
