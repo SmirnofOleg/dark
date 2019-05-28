@@ -113,3 +113,6 @@ $(document).ready(function(){
 		$('.shapes7').css('marginTop', amountMovedY3);
 	
 	})
+
+// Анимация
+	AOS.init();
